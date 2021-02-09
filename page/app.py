@@ -8,7 +8,7 @@ __desc__ = ''
 import yaml
 from appium import webdriver
 
-from basepage import BasePage
+from page.basepage import BasePage
 from page.main_page import MainPage
 
 
@@ -20,7 +20,7 @@ class App(BasePage):
         if self.driver is None:
             caps = {}
             caps["platformName"] = "android"
-            caps["deviceName"] = yaml.safe_load(open("./configuration.yml"))["caps"]["deviceName"]
+            caps["deviceName"] = yaml.safe_load(open("../page/configuration.yml"))["caps"]["deviceName"]
             caps["appPackage"] = self._package
             caps["appActivity"] = self._activity
             caps["noReset"] = "true"

@@ -4,7 +4,7 @@ import yaml
 def handle_black(fun):
     def run(*args, **kwargs):
         instance = args[0]
-        with open("./black_list.yaml", "r", encoding="utf-8") as f:
+        with open("../page/black_list.yaml", "r", encoding="utf-8") as f:
             black_lists = yaml.load(f)
         # 捕获异常（元素没找到）
         try:

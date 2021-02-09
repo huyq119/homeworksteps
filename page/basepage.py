@@ -8,7 +8,7 @@ import yaml
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from handle_black import handle_black
+from page.handle_black import handle_black
 
 
 class BasePage:

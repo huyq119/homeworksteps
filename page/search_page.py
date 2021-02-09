@@ -1,7 +1,4 @@
-import yaml
-from selenium.webdriver.common.by import By
-
-from basepage import BasePage
+from page.basepage import BasePage
 
 
 class SearchPage(BasePage):

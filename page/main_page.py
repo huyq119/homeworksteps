@@ -1,4 +1,4 @@
-from basepage import BasePage
+from page.basepage import BasePage
 from page.market_page import MarketPage
 
 
